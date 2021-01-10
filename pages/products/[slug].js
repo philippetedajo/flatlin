@@ -2,6 +2,7 @@ import Head from "next/head";
 import { API_URL, fromImgToUrl } from "../../utils/url";
 import { decimal } from "../../utils/decimal";
 import { BiArrowBack } from "react-icons/bi";
+import Image from "next/image";
 
 import Router from "next/router";
 
@@ -22,9 +23,11 @@ const Product = ({ product }) => {
           <BiArrowBack className="mr-2" /> back
         </div>
         <h2> {product.name} </h2>
-        <img
+        <Image
           src={fromImgToUrl(product.image.formats.medium)}
           alt={product.name}
+          height={500}
+          width={750}
         />
         <p>{product.content}</p>
         <p>${decimal(product.price)}</p>

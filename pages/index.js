@@ -2,6 +2,7 @@ import Head from "next/head";
 import PageTemplate from "../templates/page.template";
 import { API_URL, fromImgToUrl } from "../utils/url";
 import Link from "next/link";
+import Image from "next/image";
 
 const Home = ({ products }) => {
   const prods = products.map((product) => (
@@ -9,7 +10,12 @@ const Home = ({ products }) => {
       <Link href={`/products/${product.slug}`}>
         <a>
           <div>
-            <img src={fromImgToUrl(product.image)} alt={product.name} />
+            <Image
+              src={fromImgToUrl(product.image.formats.small)}
+              alt={product.name}
+              height={333}
+              width={500}
+            />
           </div>
           <div>{product.name}</div>
         </a>
@@ -20,7 +26,7 @@ const Home = ({ products }) => {
   return (
     <div>
       <Head>
-        <title>Flatline</title>
+        <title>Flatlin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -40,7 +46,6 @@ export default Home;
 Home.Template = PageTemplate;
 
 export async function getStaticProps() {
-  console.log(API_URL);
   const data = await fetch(`${API_URL}/products/`);
   const products = await data.json();
 
