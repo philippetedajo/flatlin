@@ -42,7 +42,6 @@ export async function getStaticProps({ params: { slug } }) {
   console.log(slug);
   const data = await fetch(`${API_URL}/products/?slug=${slug}`);
   const product = await data.json();
-
   return {
     props: {
       product: product[0],
