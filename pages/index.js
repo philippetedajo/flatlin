@@ -23,7 +23,14 @@ const Home = ({ products }) => {
         <title>Flatline</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="grid grid-cols-3 gap-4 mt-20">{prods}</div>
+
+      {prods.length === 0 ? (
+        <div>
+          <h2>There is no products</h2>
+        </div>
+      ) : (
+        <div className="grid grid-cols-3 gap-4 mt-20">{prods}</div>
+      )}
     </div>
   );
 };
@@ -33,8 +40,15 @@ export default Home;
 Home.Template = PageTemplate;
 
 export async function getStaticProps() {
+  console.log(API_URL);
   const data = await fetch(`${API_URL}/products/`);
   const products = await data.json();
+
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {
