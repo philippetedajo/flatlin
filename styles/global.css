@@ -18,7 +18,7 @@ body {
   font-family: ddin, serif;
 }
 h1 {
-  @apply text-6xl mt-5 font-ddinbold;
+  @apply text-6xl mt-5;
 }
 h2 {
   @apply text-3xl;

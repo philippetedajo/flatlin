@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "name": "Suede sofa",
+    "content": "Suede Sofa for moment in family",
+    "meta_description": "Suede Sofa for moment in family\n",
+    "meta_title": "Suede sofa",
+    "price": 3580.455,
+    "slug": "suede-sofa",
+    "published_at": "2021-01-09T18:17:13.478Z",
+    "created_at": "2021-01-09T18:17:07.342Z",
+    "updated_at": "2021-01-09T18:17:13.510Z",
+    "image": {
+      "id": 1,
+      "name": "phillip-goldsberry-fZuleEfeA1Q-unsplash.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 5760,
+      "height": 3840,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_phillip-goldsberry-fZuleEfeA1Q-unsplash.jpg",
+          "hash": "thumbnail_phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 234,
+          "height": 156,
+          "size": 4.57,
+          "path": null,
+          "url": "/uploads/thumbnail_phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e.jpg"
+        },
+        "large": {
+          "name": "large_phillip-goldsberry-fZuleEfeA1Q-unsplash.jpg",
+          "hash": "large_phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 1000,
+          "height": 667,
+          "size": 45.4,
+          "path": null,
+          "url": "/uploads/large_phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e.jpg"
+        },
+        "medium": {
+          "name": "medium_phillip-goldsberry-fZuleEfeA1Q-unsplash.jpg",
+          "hash": "medium_phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 750,
+          "height": 500,
+          "size": 28.26,
+          "path": null,
+          "url": "/uploads/medium_phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e.jpg"
+        },
+        "small": {
+          "name": "small_phillip-goldsberry-fZuleEfeA1Q-unsplash.jpg",
+          "hash": "small_phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 333,
+          "size": 14.41,
+          "path": null,
+          "url": "/uploads/small_phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e.jpg"
+        }
+      },
+      "hash": "phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 1241.15,
+      "url": "/uploads/phillip_goldsberry_f_Zule_Efe_A1_Q_unsplash_8d33fd999e.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-01-09T18:17:00.369Z",
+      "updated_at": "2021-01-09T18:17:00.386Z"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Leather sofa",
+    "content": "Leather Sofa for moment in family\n",
+    "meta_description": "Leather leather for moment in family\n",
+    "meta_title": "Leather sofa",
+    "price": 4600.455,
+    "slug": "leather-sofa",
+    "published_at": "2021-01-09T18:18:52.777Z",
+    "created_at": "2021-01-09T18:18:49.778Z",
+    "updated_at": "2021-01-09T18:18:52.805Z",
+    "image": {
+      "id": 2,
+      "name": "paul-weaver-nWidMEQsnAQ-unsplash.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 5029,
+      "height": 3353,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_paul-weaver-nWidMEQsnAQ-unsplash.jpg",
+          "hash": "thumbnail_paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 234,
+          "height": 156,
+          "size": 5.85,
+          "path": null,
+          "url": "/uploads/thumbnail_paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5.jpg"
+        },
+        "large": {
+          "name": "large_paul-weaver-nWidMEQsnAQ-unsplash.jpg",
+          "hash": "large_paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 1000,
+          "height": 667,
+          "size": 56.89,
+          "path": null,
+          "url": "/uploads/large_paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5.jpg"
+        },
+        "medium": {
+          "name": "medium_paul-weaver-nWidMEQsnAQ-unsplash.jpg",
+          "hash": "medium_paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 750,
+          "height": 500,
+          "size": 35.85,
+          "path": null,
+          "url": "/uploads/medium_paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5.jpg"
+        },
+        "small": {
+          "name": "small_paul-weaver-nWidMEQsnAQ-unsplash.jpg",
+          "hash": "small_paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 333,
+          "size": 18.83,
+          "path": null,
+          "url": "/uploads/small_paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5.jpg"
+        }
+      },
+      "hash": "paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 1057.43,
+      "url": "/uploads/paul_weaver_n_Wid_ME_Qsn_AQ_unsplash_ca73c01ee5.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-01-09T18:18:46.598Z",
+      "updated_at": "2021-01-09T18:18:46.612Z"
+    }
+  }
+]
