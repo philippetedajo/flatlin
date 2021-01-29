@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { API_URL, fromImgToUrl } from "../../utils/url";
-import { decimal } from "../../utils/decimal";
+import { price } from "../../utils/price";
 import { BiArrowBack } from "react-icons/bi";
 import Image from "next/image";
 
@@ -24,13 +24,13 @@ const Product = ({ product }) => {
         </div>
         <h2> {product.name} </h2>
         <Image
-          src={fromImgToUrl(product.image.formats.medium)}
+          src={fromImgToUrl(product.image ? product.image.formats.medium : "")}
           alt={product.name}
           height={500}
           width={750}
         />
         <p>{product.content}</p>
-        <p>${decimal(product.price)}</p>
+        <p>{price(product.price)}</p>
       </div>
     </>
   );
