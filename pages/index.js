@@ -32,7 +32,7 @@ const Home = ({ products }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {prods.length === 0 ? (
+      {prods && prods.length === 0 ? (
         <div>
           <h2>There is no products</h2>
         </div>
