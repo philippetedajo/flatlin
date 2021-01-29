@@ -11,7 +11,9 @@ const Home = ({ products }) => {
         <a>
           <div>
             <Image
-              src={fromImgToUrl(product.image.formats.small)}
+              src={fromImgToUrl(
+                product.image ? product.image.formats.small : ""
+              )}
               alt={product.name}
               height={333}
               width={500}
