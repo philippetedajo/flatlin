@@ -1,5 +1,7 @@
 import { Progress } from "../components";
 import "../styles/global.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App({ Component, pageProps }) {
   const Template = Component.Template || EmptyTemplate;

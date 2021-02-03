@@ -17,6 +17,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.1.0",
+    "react-slick": "^0.28.0",
+    "slick-carousel": "^1.8.1",
     "tailwindcss": "^2.0.2"
   }
 }
