@@ -2,35 +2,8 @@ import Head from "next/head";
 import PageTemplate from "../templates/page.template";
 import { API_URL } from "../utils/url";
 import { ProductSlider } from "../components";
-import React from "react";
 
 const Home = ({ products }) => {
-  const specifications = [
-    {
-      title: "lorem",
-      detail:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci  libero omnis perferendis, quam quidem rerum. A accusamus aliquid",
-    },
-    {
-      title: "lorem",
-      detail:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci  libero omnis perferendis, quam quidem rerum. A accusamus aliquid",
-    },
-  ];
-
-  const specs = specifications.map(({ title, detail }) => {
-    return (
-      <div>
-        <h3 className="font-semibold mt-10 mb-2 text-center md:text-left ">
-          {title}
-        </h3>
-        <p className="text-sm text-gray-600 md:w-8/12 text-center md:text-left">
-          {detail}
-        </p>
-      </div>
-    );
-  });
-
   return (
     <div>
       <Head>
@@ -63,11 +36,14 @@ const Home = ({ products }) => {
             reprehenderit.
           </p>
         </div>
-        <div className="flex items-center md:w-1/2">
+        <div className="flex flex-col  md:w-1/2">
           <img
             src="/images/gez-xavier-mansfield-b34E1vh1tYU-unsplash.jpg"
             alt="img"
           />
+          <small className="font-semibold mt-3">
+            View this product &#x2192;{" "}
+          </small>
         </div>
       </div>
       {/*===================================================*/}

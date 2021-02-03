@@ -8,12 +8,7 @@ const Footer = () => {
     >
       <ul className="flex flex-col text-center sm:flex-row">
         <li>
-          <p className="mr-2.5 lg:mr-10">@2020 Nextwind </p>
-        </li>
-        <li>
-          <Link href="/privacy">
-            <a>Privacy policies</a>
-          </Link>
+          <p className="mr-2.5 lg:mr-10">@2020 Flatline</p>
         </li>
       </ul>
     </div>
