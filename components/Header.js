@@ -12,31 +12,26 @@ const Header = () => {
   };
 
   return (
-    <div className="px-10 py-4 flex justify-between ">
-      <div className="flex items-center">
-        <ActiveLink activeClassName="text-third" href="/">
-          <a className="text-2xl cursor-pointer">Flatline</a>
-        </ActiveLink>
-      </div>
+    <div className="px-10 py-4 flex justify-between fixed w-full z-50 text-primary">
       <MenuOverlay menuState={menuState} setMenuState={setMenuState} />
-      <ul className="text-lg items-center hidden lg:flex">
+      <ul className="text-base font-semibold items-center hidden lg:flex">
+        <li>
+          <ActiveLink activeClassName="text-third" href="/shop">
+            <a className="mr-5">Shop</a>
+          </ActiveLink>
+        </li>
         <li>
           <ActiveLink activeClassName="text-third" href="/about">
             <a className="mr-5">About</a>
           </ActiveLink>
         </li>
-        <li>
-          <ActiveLink activeClassName="text-third" href="/news">
-            <a className="mr-5">News</a>
-          </ActiveLink>
-        </li>
-        <li>
-          <ActiveLink activeClassName="text-third" href="/contact">
-            <a>Contact</a>
-          </ActiveLink>
-        </li>
       </ul>
-      <ul className="text-lg flex items-center hidden lg:flex">
+      <div className="flex items-center">
+        <ActiveLink activeClassName="" href="/">
+          <a className="text-2xl font-semibold cursor-pointer">Flatline</a>
+        </ActiveLink>
+      </div>
+      <ul className="text-base font-semibold flex items-center hidden lg:flex">
         <li>
           <ActiveLink activeClassName="text-third" href="/login">
             <a className="mr-5">Login</a>

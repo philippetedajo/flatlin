@@ -32,6 +32,18 @@ const Home = ({ products }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className="h-104 shadow-xl flex flex-col justify-end bg-banner bg-cover bg-center pl-5 pb-5 pl-10 text-primary ">
+        <div>
+          <h2 className="font-bold">Car name</h2>
+          <p className=" w-10/12 md:w-8/12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            libero omnis perferendis, quam quidem rerum. A accusamus aliquid
+            asperiores atque culpa dicta.
+          </p>
+        </div>
+        <div className="mt-4 w-32 border-secondary border-1 border-b" />
+      </div>
+      {/* */}
       {prods && prods.length === 0 ? (
         <div>
           <h2>There is no products</h2>

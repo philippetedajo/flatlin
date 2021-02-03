@@ -9,8 +9,8 @@ const MenuOverlay = ({ menuState, setMenuState }) => {
     <div
       className={
         menuState
-          ? "lg:hidden fixed top-0 right-0 h-full w-full z-10 text-secondary transition-all"
-          : "fixed"
+          ? "lg:hidden fixed top-0 right-0 h-full w-full z-10 text-secondary transition-all z-50"
+          : "fixed z-50"
       }
       onClick={() => setMenuState(false)}
     >
@@ -25,14 +25,11 @@ const MenuOverlay = ({ menuState, setMenuState }) => {
           <Link href="/">
             <a className="text-xl my-3 cursor-pointer">Home</a>
           </Link>
+          <Link href="/shop">
+            <a className="text-xl my-3 cursor-pointer">Shop</a>
+          </Link>
           <Link href="/about">
             <a className="text-xl my-3 cursor-pointer">About</a>
-          </Link>
-          <Link href="/news">
-            <a className="text-xl my-3 cursor-pointer">News</a>
-          </Link>
-          <Link href="/contact">
-            <a className="text-xl my-3 cursor-pointer">Contact</a>
           </Link>
           <Link href="/login">
             <a className="text-xl my-3 cursor-pointer ">Login</a>
