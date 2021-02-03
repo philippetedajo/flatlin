@@ -16,11 +16,6 @@ const Home = ({ products }) => {
       detail:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci  libero omnis perferendis, quam quidem rerum. A accusamus aliquid",
     },
-    {
-      title: "lorem",
-      detail:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci  libero omnis perferendis, quam quidem rerum. A accusamus aliquid",
-    },
   ];
 
   const specs = specifications.map(({ title, detail }) => {
@@ -76,26 +71,6 @@ const Home = ({ products }) => {
         </div>
       </div>
       {/*===================================================*/}
-      <div className="w-full flex flex-col-reverse md:flex-row px-5 sm:px-10 my-24 ">
-        <div className="flex items-center md:w-1/2">
-          <img
-            src="/images/gez-xavier-mansfield-b34E1vh1tYU-unsplash.jpg"
-            alt="img"
-          />
-        </div>
-        <div className="flex flex-col md:w-1/2 md:pl-20">
-          <h1 className="text-5xl md:text-5xl text-center md:text-left font-semibold">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h1>
-          <p className="text-center md:text-left my-7 md:w-10/12 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid
-            minus quod tempora? Aliquam dolorem enim et explicabo facilis
-            laborum officiis sequi vel. Atque deserunt impedit natus odit quidem
-            reprehenderit.
-          </p>
-          {specs}
-        </div>
-      </div>
     </div>
   );
 };
