@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ["flatlin.herokuapp.com"],
+    domains: ["res.cloudinary.com"],
   },
 };
