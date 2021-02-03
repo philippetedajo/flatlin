@@ -20,11 +20,6 @@ const Header = () => {
             <a className="mr-5">Shop</a>
           </ActiveLink>
         </li>
-        <li>
-          <ActiveLink activeClassName="text-third" href="/about">
-            <a className="mr-5">About</a>
-          </ActiveLink>
-        </li>
       </ul>
       <div className="flex items-center">
         <ActiveLink activeClassName="" href="/">

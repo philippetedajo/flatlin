@@ -13,7 +13,7 @@ const Register = () => {
       </div>
 
       <form className="w-96">
-        <h1 className="mb-10 mt-16">Register</h1>
+        <h1 className="mb-10 mt-16 text-5xl font-semibold">Register</h1>
         <h2>Create your account in a few clicks</h2>
         <p className="mt-2 mb-5 text-gray-400 ">Welcome amongs us</p>
         <div className="flex flex-col mb-3">

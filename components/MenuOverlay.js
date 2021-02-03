@@ -28,9 +28,6 @@ const MenuOverlay = ({ menuState, setMenuState }) => {
           <Link href="/shop">
             <a className="text-xl my-3 cursor-pointer">Shop</a>
           </Link>
-          <Link href="/about">
-            <a className="text-xl my-3 cursor-pointer">About</a>
-          </Link>
           <Link href="/login">
             <a className="text-xl my-3 cursor-pointer ">Login</a>
           </Link>
