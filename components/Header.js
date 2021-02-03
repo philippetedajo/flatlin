@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <div className="px-10 py-4 flex justify-between fixed w-full z-50 text-primary">
+    <div className="px-5 sm:px-10 py-4 flex justify-between fixed w-full z-50 text-primary">
       <MenuOverlay menuState={menuState} setMenuState={setMenuState} />
       <ul className="text-base font-semibold items-center hidden lg:flex">
         <li>

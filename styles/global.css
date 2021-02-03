@@ -16,6 +16,7 @@
 /* General */
 body {
   font-family: ddin, serif;
+  letter-spacing: 1px !important;
 }
 
 .btn {

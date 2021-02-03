@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <div>
       <div
-        className="absolute flex items-center left-0 ml-10 mt-5 cursor-pointer text-third"
+        className="absolute flex items-center left-0 ml-10 mt-5 cursor-pointer text-blue-600"
         onClick={() => Router.back()}
       >
         <BiArrowBack className="mr-2" /> back
@@ -15,7 +15,7 @@ const Register = () => {
       <form className="w-96">
         <h1 className="mb-10 mt-16">Register</h1>
         <h2>Create your account in a few clicks</h2>
-        <p className="mt-2 mb-5 text-fourth ">Welcome amongs us</p>
+        <p className="mt-2 mb-5 text-gray-400 ">Welcome amongs us</p>
         <div className="flex flex-col mb-3">
           <label>Username</label>
           <input className="btn-form my-2" type="text" placeholder="John Doe" />
@@ -40,15 +40,15 @@ const Register = () => {
         <div className="flex flex-col">
           <div className="flex items-center mb-5 text-xs">
             <input className="mr-2" type="checkbox" />
-            <span className="text-fourth">I agree to the</span>
-            <span className="text-third ml-1">privacy policy</span>
+            <span className="text-gray-400">I agree to the</span>
+            <span className="text-blue-600 ml-1">privacy policy</span>
           </div>
         </div>
-        <div className="btn border-2 border-third bg-third text-secondary my-5">
+        <div className="btn border-2 border-blue-600 bg-blue-600 text-white my-5">
           CREATE ACCOUNT
         </div>
         <p className="my-5 text-center">
-          Already have an account ?<span className="text-third"> Login</span>
+          Already have an account ?<span className="text-blue-600"> Login</span>
         </p>
       </form>
     </div>

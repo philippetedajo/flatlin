@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: ["./pages/**/*.js", "./components/**/*.js"],
   darkMode: false, // or 'media' or 'class'
@@ -12,11 +14,15 @@ module.exports = {
       },
     },
     colors: {
-      primary: "#000",
-      secondary: "#fff",
-      third: "#3e6ae1",
-      fourth: "#a1a1aa",
-      beige: "#F8F7F2",
+      transparent: "transparent",
+      current: "currentColor",
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
+      blue: colors.blue,
     },
     fontFamily: {
       ddin: ["ddin", "serif"],

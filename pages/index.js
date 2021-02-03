@@ -1,17 +1,48 @@
 import Head from "next/head";
 import PageTemplate from "../templates/page.template";
 import { API_URL } from "../utils/url";
-
 import { ProductSlider } from "../components";
+import React from "react";
 
 const Home = ({ products }) => {
+  const specifications = [
+    {
+      title: "lorem",
+      detail:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci  libero omnis perferendis, quam quidem rerum. A accusamus aliquid",
+    },
+    {
+      title: "lorem",
+      detail:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci  libero omnis perferendis, quam quidem rerum. A accusamus aliquid",
+    },
+    {
+      title: "lorem",
+      detail:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci  libero omnis perferendis, quam quidem rerum. A accusamus aliquid",
+    },
+  ];
+
+  const specs = specifications.map(({ title, detail }) => {
+    return (
+      <div>
+        <h3 className="font-semibold mt-10 mb-2 text-center md:text-left ">
+          {title}
+        </h3>
+        <p className="text-sm text-gray-600 md:w-8/12 text-center md:text-left">
+          {detail}
+        </p>
+      </div>
+    );
+  });
+
   return (
     <div>
       <Head>
         <title>Flatlin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="h-104 shadow-xl flex flex-col justify-end bg-banner bg-cover bg-center pl-5 pb-5 pl-10 text-primary ">
+      <div className="h-104 shadow-xl flex flex-col justify-end bg-banner bg-cover bg-center pl-5 sm:pl-10 text-primary ">
         <div>
           <h2 className="font-bold text-6xl">Product name</h2>
           <p className=" w-10/12 md:w-8/12">
@@ -22,7 +53,49 @@ const Home = ({ products }) => {
         </div>
         <div className="mt-4 w-32 border-secondary border-1 border-b" />
       </div>
+      {/*===================================================*/}
       <ProductSlider bestSell={products} />
+      {/*===================================================*/}
+      <div className="w-full flex flex-col md:flex-row px-5 sm:px-10 my-14 ">
+        <div className="flex flex-col justify-center md:w-1/2">
+          <h1 className="text-5xl md:text-6xl text-center md:text-left font-semibold">
+            Lorem ipsum dolor sit amet consectetur.
+          </h1>
+          <p className="text-center md:text-left my-7 md:w-10/12 text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid
+            minus quod tempora? Aliquam dolorem enim et explicabo facilis
+            laborum officiis sequi vel. Atque deserunt impedit natus odit quidem
+            reprehenderit.
+          </p>
+        </div>
+        <div className="flex items-center md:w-1/2">
+          <img
+            src="/images/gez-xavier-mansfield-b34E1vh1tYU-unsplash.jpg"
+            alt="img"
+          />
+        </div>
+      </div>
+      {/*===================================================*/}
+      <div className="w-full flex flex-col-reverse md:flex-row px-5 sm:px-10 my-24 ">
+        <div className="flex items-center md:w-1/2">
+          <img
+            src="/images/gez-xavier-mansfield-b34E1vh1tYU-unsplash.jpg"
+            alt="img"
+          />
+        </div>
+        <div className="flex flex-col md:w-1/2 md:pl-20">
+          <h1 className="text-5xl md:text-5xl text-center md:text-left font-semibold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h1>
+          <p className="text-center md:text-left my-7 md:w-10/12 text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid
+            minus quod tempora? Aliquam dolorem enim et explicabo facilis
+            laborum officiis sequi vel. Atque deserunt impedit natus odit quidem
+            reprehenderit.
+          </p>
+          {specs}
+        </div>
+      </div>
     </div>
   );
 };

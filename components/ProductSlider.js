@@ -13,18 +13,20 @@ const ProductSlider = (products) => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
+    easing: "ease-in-out",
+    lazyLoad: "progressive",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -32,7 +34,7 @@ const ProductSlider = (products) => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -42,10 +44,10 @@ const ProductSlider = (products) => {
   };
 
   const prods = products.bestSell.map((product) => (
-    <div className="border-primary p-5 " key={product.id}>
+    <div className="p-0 pt-5 sm:p-5" key={product.id}>
       <Link href={`/products/${product.slug}`}>
         <a>
-          <div className=" border-primary border-2 hover:translate-y-1.5">
+          <div>
             <Image
               src={fromImgToUrl(
                 product.image ? product.image.formats.small : ""
@@ -55,16 +57,16 @@ const ProductSlider = (products) => {
               width={500}
             />
           </div>
-          <div className="font-semibold">{product.name}</div>
-          <div className="">from ${product.price} </div>
+          <div className="font-semibold pt-4 pb-3">{product.name}</div>
+          <div className="text-gray-600">from ${product.price} </div>
         </a>
       </Link>
     </div>
   ));
 
   return (
-    <div className="mt-14 px-10">
-      <h2 className="mb-5 font-semibold text-2xl">Best sellers</h2>
+    <div className="my-16 px-5 sm:px-10">
+      <h2 className="font-semibold text-2xl">Best sellers</h2>
       {prods && prods.length === 0 ? (
         <div>
           <h2>There is no best seller products</h2>
@@ -77,3 +79,5 @@ const ProductSlider = (products) => {
 };
 
 export default ProductSlider;
+
+//hover:scale-150 transition-all duration-700 ease-in-out
